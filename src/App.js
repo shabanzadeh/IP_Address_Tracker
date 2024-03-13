@@ -1,9 +1,11 @@
 import React from 'react'
-const url = "https://leafletjs.com/"
+
+
+import Grid from './components/grid'
 function App() {
   return (
     <div >
-     Hello react
+     <Grid />
     </div>
   );
 }
