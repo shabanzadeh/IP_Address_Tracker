@@ -1,11 +1,11 @@
 import React from 'react'
 
 
-import Grid from './components/grid'
+import GridLayout from './components/grid'
 function App() {
   return (
     <div >
-     <Grid />
+     <GridLayout />
     </div>
   );
 }

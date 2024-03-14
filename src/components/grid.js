@@ -3,14 +3,17 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Map from './map'
 
+import ButtunIp from './buttunIp';
 
 
-function AutoLayoutExample() {
+
+const GridLayout=()=> {
   return (
     <Container fluid>
         
       <Row className='container'>
-        <Col className='uben' xs={6}>    
+        <Col className='uben' xs={6}>  
+        <ButtunIp />  
         </Col>
         <Col className='map'>
         <div>
@@ -28,4 +31,4 @@ function AutoLayoutExample() {
   );
 }
 
-export default AutoLayoutExample;
+export default GridLayout;
