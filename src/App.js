@@ -1,12 +1,14 @@
-import React from 'react'
 
-
-import GridLayout from './components/grid'
+import GridLayout from './Components/Grid'
 function App() {
+  
   return (
+    
+
     <div >
      <GridLayout />
     </div>
+   
   );
 }
 

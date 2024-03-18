@@ -1,19 +1,21 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import Map from './map'
 
-import ButtunIp from './buttunIp';
-
+import Map from './Map';
+import ButtunIP from './ButtunIp';
 
 
 const GridLayout=()=> {
+
+ 
+
+
   return (
     <Container fluid>
-        
-      <Row className='container'>
+         <Row className='container'>
         <Col className='uben' xs={6}>  
-        <ButtunIp />  
+        <ButtunIP />  
         </Col>
         <Col className='map'>
         <div>
@@ -29,6 +31,6 @@ const GridLayout=()=> {
       
     </Container>
   );
-}
+};
 
 export default GridLayout;
