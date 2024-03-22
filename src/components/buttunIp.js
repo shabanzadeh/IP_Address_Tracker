@@ -1,6 +1,6 @@
 import {useContext } from "react";
 import { mapContext } from "../App";
-import Map from './Map'
+
 
 
 const ButtunIP =()=>{

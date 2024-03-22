@@ -1,7 +1,7 @@
 
 import { createContext, useState } from 'react';
 import Axios from "axios";
-import GridLayout from './Components/Grid'
+import GridLayout from './components/grid'
 
 
 export const mapContext = createContext();
@@ -19,6 +19,8 @@ function App() {
     const {loc} = res.data;
     console.log(loc);
     const [longitude, latitude] = loc.split(",");
+    setLatitude(latitude);
+    setLongitude(longitude);
     
      
     })
