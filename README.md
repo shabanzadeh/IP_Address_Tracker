@@ -6,5 +6,5 @@
 - See their own IP address on the map on the initial page load
 - Search for any IP addresses or domains and see the key information and location
 ## How to run application
-
-1. Run ` npm run start`
+1. `npm install`
+2. Run ` npm run start`
