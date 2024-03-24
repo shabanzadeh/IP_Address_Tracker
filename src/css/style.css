@@ -1,19 +1,25 @@
 .container{
     margin: auto;
-    margin-top: 75px;
-    margin-left: 350px;
+   
 }
 
 .uben{
+    margin: auto;
     background-color: rgb(19, 60, 206);
     width: 70%;
     height: 200px;
+    margin-left: 15%;
+    align-items: center;
+    margin-top: 100px;
 }
 
 .map{
+    margin: auto;
    
     width: 70%;
-    height: 400px;
+    margin-left: 15%;
+    padding-bottom: 20%;
+    margin-bottom: 100px;
    
 }
 .buttun-map{
@@ -44,4 +50,14 @@
     font-size: 20px;
     padding-left: 70px;
     padding-bottom: 10px;
+   }
+   .mapDetail{
+    margin: auto;
+    background-color: white;
+    width: 70%;
+    height: 100px;
+    margin-left: 15%;
+    border: 2px wheat;
+    
+
    }
