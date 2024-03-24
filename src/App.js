@@ -8,7 +8,7 @@ export const mapContext = createContext();
 
 
 function App() {
-  const [inputValue, setInputValue] = useState("")
+  const [inputValue, setInputValue] = useState(" ")
   const [latitude, setLatitude ]= useState(" ");
   const [longitude,setLongitude]  = useState(" ");
   
