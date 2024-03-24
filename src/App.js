@@ -1,15 +1,17 @@
 
 import { createContext, useState } from 'react';
 import Axios from "axios";
-import GridLayout from './components/grid'
+import GridLayout from './Components/grid'
 
 
 export const mapContext = createContext();
+
 
 function App() {
   const [inputValue, setInputValue] = useState("")
   const [latitude, setLatitude ]= useState(" ");
   const [longitude,setLongitude]  = useState(" ");
+  
   
 
   const fetchIP = ()=>{
@@ -18,7 +20,9 @@ function App() {
     setInputValue(res.data.ip)
     const {loc} = res.data;
     console.log(loc);
-    const [longitude, latitude] = loc.split(",");
+    const [latitude, longitude] = loc.split(",");
+    setLatitude(latitude);
+    setLongitude(longitude)
     
      
     })
