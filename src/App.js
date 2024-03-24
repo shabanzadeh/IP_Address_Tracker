@@ -7,7 +7,7 @@ import GridLayout from './components/grid'
 export const mapContext = createContext();
 
 function App() {
-  const [inputValue, setInputValue] = useState(" ")
+  const [inputValue, setInputValue] = useState("")
   const [latitude, setLatitude ]= useState(" ");
   const [longitude,setLongitude]  = useState(" ");
   
@@ -19,8 +19,6 @@ function App() {
     const {loc} = res.data;
     console.log(loc);
     const [longitude, latitude] = loc.split(",");
-    setLatitude(latitude);
-    setLongitude(longitude);
     
      
     })

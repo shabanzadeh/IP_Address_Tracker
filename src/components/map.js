@@ -4,11 +4,11 @@ import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 
-
-
 const Map = () => {
 
   const {longitude, latitude, fetchIP} = useContext(mapContext);
+  console.log(latitude);
+  console.log(longitude + "ich bin maryam")
   
     
   const mapRef = useRef(null);
