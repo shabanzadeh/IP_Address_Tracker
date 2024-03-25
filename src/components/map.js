@@ -4,8 +4,9 @@ import { MapContainer, TileLayer } from "react-leaflet";
 import "leaflet/dist/leaflet.css";
 
 const Map = () => {
-  const { latitude, longitude, fetchIP } = useContext(mapContext);
+  const { latitude,longitude, fetchIP } = useContext(mapContext);
   const mapRef = useRef(null);
+  
 
   useEffect(() => {
     fetchIP();

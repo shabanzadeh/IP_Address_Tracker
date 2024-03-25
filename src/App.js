@@ -11,23 +11,20 @@ function App() {
   const [inputValue, setInputValue] = useState(" ")
   const [latitude, setLatitude ]= useState(" ");
   const [longitude,setLongitude]  = useState(" ");
-  const [city, setCity] = useState("");
-  const [timezone, setTimezone] = useState("");
-  const [region, setRegion] = useState("");
-  
+  const [fetchResult, setFetchResult] = useState([])
+ 
   
 
   const fetchIP = ()=>{
     Axios.get(`https://ipinfo.io/${inputValue}/json`).then((res)=>{
     console.log(res.data);
     setInputValue(res.data.ip)
-    const {city, loc, timezone, region} = res.data
-    const [latitude, longitude] = loc.split(",");
+    //const {city, loc, timezone, region} = res.data
+    //const [latitude, longitude] = loc.split(",");
     setLatitude(latitude);
     setLongitude(longitude);
-    setCity(city)
-    setRegion(region);
-    setTimezone(timezone)
+    setFetchResult(res.data)
+   
    
     
     
@@ -37,7 +34,7 @@ function App() {
 }
   
   return (
-    <mapContext.Provider value={{fetchIP, inputValue, setInputValue, longitude, latitude, city, region, timezone}}>
+    <mapContext.Provider value={{fetchIP, inputValue, setInputValue, fetchResult, latitude, longitude}}>
     
     <div >
      <GridLayout />
