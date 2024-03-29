@@ -19,16 +19,12 @@ function App() {
     Axios.get(`https://ipinfo.io/${inputValue}/json`).then((res)=>{
     console.log(res.data);
     setInputValue(res.data.ip)
-    //const {city, loc, timezone, region} = res.data
-    //const [latitude, longitude] = loc.split(",");
+    const {loc} = res.data
+    const [latitude, longitude] = loc.split(",");
     setLatitude(latitude);
     setLongitude(longitude);
     setFetchResult(res.data)
-   
-   
-    
-    
-     
+      
     })
     
 }

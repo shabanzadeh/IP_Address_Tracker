@@ -17,6 +17,7 @@ const Map = () => {
       mapRef.current.setView([latitude, longitude], 13);
     }
   }, [latitude, longitude]);
+  console.log(latitude + "ich bin maryam")
 
   return (
     <div style={{ width: '100%', height: '400px' }}>
