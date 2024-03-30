@@ -1,25 +1,23 @@
-import Container from "react-bootstrap/Container";
-import Row from "react-bootstrap/Row";
-import Col from "react-bootstrap/Col";
+
 import Map from "./map";
 import MapDetail from "./mapDetail";
 import ButtunIP from "./buttunIp";
 
+
 const GridLayout = () => {
   return (
-    <Container fluid>
-      <Row className="container">
-        <Col className="uben">
+    <>
+    <div className="container">
+      <div className="row g-0 bg-light pt-5 pb-5">
+        <div className="uben col-sm-8">
           <ButtunIP />
-        </Col>
-        <Col className="mapDetail container">
-          <MapDetail />
-        </Col>
-        <Col className="map">
+        </div>
+        <div className="map col-sm-8">
           <Map />
-        </Col>
-      </Row>
-    </Container>
+        </div>
+      </div>
+      </div>
+    </>
   );
 };
 

@@ -1,14 +1,15 @@
-import { useContext } from "react";
+import React, { useContext } from "react";
 import { mapContext } from "../App";
+
 const MapDetail = () => {
-  const { inputValue, fetchResult } = useContext(mapContext);
-  //const {city, timezone, region}= inputValue;
+  const { fetchResult } = useContext(mapContext);
+
   return (
     <div className="row">
-      <di className="col-3">{fetchResult?.ip}</di>
-      <di className="col-3">{fetchResult?.city}</di>
-      <di className="col-3">{fetchResult?.region}</di>
-      <di className="col-3">{fetchResult?.timezone}</di>
+      <div className="col-3 bg-success">{fetchResult?.ip}</div>
+      <div className="col-3">{fetchResult?.city}</div>
+      <div className="col-3">{fetchResult?.region}</div>
+      <div className="col-3">{fetchResult?.timezone}</div>
     </div>
   );
 };

@@ -1,7 +1,7 @@
 import React, { createContext, useState } from "react";
 import Axios from "axios";
 import GridLayout from "./Components/grid";
-
+import 'bootstrap/dist/css/bootstrap.min.css'
 export const mapContext = createContext();
 
 function App() {

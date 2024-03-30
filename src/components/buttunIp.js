@@ -1,24 +1,32 @@
 import { useContext } from "react";
 import { mapContext } from "../App";
-
 const ButtunIP = () => {
   const { setInputValue, fetchIP } = useContext(mapContext);
 
   return (
-    <div className="buttun-map">
+    <div className="container bg-primary bg-opacity-75">
+    <div className="row justify-content-center g-0">
+      <div className="col-sm-4 col-md-4 col-lg-4">
       <label htmlFor="ip">
-        <h4>IP Address Tracker</h4>
+        <div className="d-flex mt-5 justify-context-center">
+          <h4 className="fs-md-2 fs-lg-4">IP Address Tracker</h4>
+        </div>  
       </label>
+      </div>
+      <div className="col-sm-12">
       <input
         type="text"
         id="ip"
         placeholder="Search for any IP address or domain"
-        className="btn"
+        className="btn bg-light"
         onChange={(event) => {
           setInputValue(event.target.value);
         }}
       ></input>
       <button onClick={fetchIP}>Add IP</button>
+      
+    </div>
+    </div>
     </div>
   );
 };
