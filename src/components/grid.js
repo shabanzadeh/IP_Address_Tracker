@@ -1,34 +1,25 @@
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import Map from "./map";
+import MapDetail from "./mapDetail";
+import ButtunIP from "./buttunIp";
 
-import Container from 'react-bootstrap/Container';
-import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
-import Map from './map';
-import MapDetail from './mapDetail';
-import ButtunIP from './buttunIp';
-
-
-
-const GridLayout=()=> {
- 
-  
+const GridLayout = () => {
   return (
-  
     <Container fluid>
-         <Row className='container'>
-        < Col className='uben' >  
-        <ButtunIP /> 
+      <Row className="container">
+        <Col className="uben">
+          <ButtunIP />
         </Col>
-          <Col className='mapDetail'>
+        <Col className="mapDetail container">
           <MapDetail />
-          </Col>
-        <Col className='map'>
-        <Map />
         </Col>
-        </Row>
-
-      
+        <Col className="map">
+          <Map />
+        </Col>
+      </Row>
     </Container>
-   
   );
 };
 
