@@ -50,3 +50,42 @@ h4 {
   margin-left: 15%;
   border-color: black;
 }
+
+@media screen and (max-width : 800px) {
+  .mapDetail {
+    margin: auto;
+    background-color: white;
+    width: 10px;
+    height: 200px;
+    border-radius: 5px;
+    padding-left: 100px;
+    
+    text-align: center;
+  }
+
+  
+}
+@media screen and (max-width: 800px) {
+  .btn {
+    margin: auto;
+    margin-top: 0%;
+    width: 60%;
+    height: 35px;
+    background-color: aliceblue;
+    color: rgba(87, 87, 92, 0.572);
+    border-radius: 10px;
+    text-align: left;
+    margin-left: 40px;
+  }
+  
+}
+@media screen and (max-width:800px) {
+  h4 {
+    margin: auto;
+    color: white;
+    font-size: 5px;
+    padding-left: 50px;
+    padding-bottom: 5px;
+  }
+  
+}

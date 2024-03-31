@@ -6,10 +6,10 @@ const ButtunIP = () => {
   return (
     <div className="container bg-primary bg-opacity-75">
     <div className="row justify-content-center g-0">
-      <div className="col-sm-4 col-md-4 col-lg-4">
+      <div className="col-sm-12 col-md-4 col-lg-4">
       <label htmlFor="ip">
         <div className="d-flex mt-5 justify-context-center">
-          <h4 className="fs-md-2 fs-lg-4">IP Address Tracker</h4>
+          <h4 >IP Address Tracker</h4>
         </div>  
       </label>
       </div>

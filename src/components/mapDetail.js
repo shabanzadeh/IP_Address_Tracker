@@ -6,10 +6,10 @@ const MapDetail = () => {
 
   return (
     <div className="row justify-content-center">
-      <div className="col-3">{fetchResult?.ip}</div>
-      <div className="col-3">{fetchResult?.city}</div>
-      <div className="col-3">{fetchResult?.region}</div>
-      <div className="col-3">{fetchResult?.timezone}</div>
+      <div className="col-sm-8 col-md-3">{fetchResult?.ip}</div>
+      <div className=" col-sm-8 col-md-3">{fetchResult?.city}</div>
+      <div className=" col-sm-8 col-md-3">{fetchResult?.region}</div>
+      <div className="col-sm-8 col-md-3">{fetchResult?.timezone}</div>
     </div>
   );
 };
