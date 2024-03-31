@@ -1,7 +1,7 @@
 # IP address tracker
 
 
-![](/public/img/currancyStand.jpeg)
+![](/public/img/ip_tracker.jpeg)
 ## The challenge
 
 - View the optimal layout for each page depending on their device's screen size

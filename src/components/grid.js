@@ -12,6 +12,7 @@ const GridLayout = () => {
         <div className="uben col-sm-8">
           <ButtunIP />
         </div>
+        <div className="col-sm-8 mapDetail"> <MapDetail /> </div>
         <div className="map col-sm-8">
           <Map />
         </div>

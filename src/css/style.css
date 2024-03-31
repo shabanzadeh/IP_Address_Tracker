@@ -6,21 +6,20 @@
   margin: auto;
   background-color: white;
   width: 70%;
-  height: 200px;
+  height: 150px;
   margin-left: 15%;
   align-items: center;
   margin-top: 100px;
+  margin-bottom: 0px;
 }
 
 .map {
   margin: auto;
   width: 70%;
+  height: 20%;
   margin-left: 15%;
-  padding-bottom: 20%;
-  margin-bottom: 100px;
-}
-.buttun-map {
-  padding-top: 60px;
+  padding-bottom: 0%;
+  margin-bottom: 0px;
 }
 
 .btn {
@@ -46,8 +45,8 @@ h4 {
 .mapDetail {
   margin: auto;
   background-color: white;
-  width: 70%;
-  height: 100px;
+  width: 20%;
+  height: 40px;
   margin-left: 15%;
   border-color: black;
 }

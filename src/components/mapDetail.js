@@ -5,8 +5,8 @@ const MapDetail = () => {
   const { fetchResult } = useContext(mapContext);
 
   return (
-    <div className="row">
-      <div className="col-3 bg-success">{fetchResult?.ip}</div>
+    <div className="row justify-content-center">
+      <div className="col-3">{fetchResult?.ip}</div>
       <div className="col-3">{fetchResult?.city}</div>
       <div className="col-3">{fetchResult?.region}</div>
       <div className="col-3">{fetchResult?.timezone}</div>
