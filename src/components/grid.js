@@ -9,7 +9,7 @@ const GridLayout = () => {
     <>
     <div className="container">
       <div className="row g-0 bg-light pt-5 pb-5">
-        <div className="uben col-sm-8">
+        <div className="col-sm-8 uben">
           <ButtunIP />
         </div>
         <div className="col-sm-8 mapDetail"> <MapDetail /> </div>
